@@ -30,7 +30,10 @@ async function playSong(id) {
     const res = await fetch(url);
     const data = await res.json();
 
-    document.getElementById("audioPlayer").src = data.audio;
+    const audio = document.getElementById("audioPlayer");
+    audio.src = data.audio;
+
+    startVisualizer(audio);
 }
 
 document.getElementById("searchBtn").onclick = async () => {
@@ -42,12 +45,11 @@ document.getElementById("searchBtn").onclick = async () => {
 };
 
 
-// AI ADVISOR – FRONTEND ONLY (FOR GITHUB TESTING)
+// AI ADVISOR
 document.getElementById("askAI").onclick = async () => {
     const prompt = document.getElementById("aiInput").value.trim();
     if (!prompt) return;
 
-    // Your key (testing only)
     const DEEPSEEK_KEY =
 "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";
 
@@ -64,7 +66,6 @@ document.getElementById("askAI").onclick = async () => {
     });
 
     const data = await res.json();
-
     document.getElementById("aiResponse").innerText =
         data.choices?.[0]?.message?.content || "No response";
 };
