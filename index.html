@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Aspect Music</header>
+
+<section id="search-section">
+    <input id="searchInput" placeholder="Search any song..." />
+    <button id="searchBtn">Search</button>
+</section>
+
+<section id="results"></section>
+
+<section id="ai-section">
+    <h2>AI Song Advisor</h2>
+    <input id="aiInput" placeholder="Ask music questions..." />
+    <button id="askAI">Ask AI</button>
+    <div id="aiResponse"></div>
+</section>
+
+<div id="player">
+    <audio id="audioPlayer" controls autoplay></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
