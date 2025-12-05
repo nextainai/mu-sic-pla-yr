@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aspect Music</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Neon Theme -->
+    <link rel="stylesheet" href="assets/theme.css">
 </head>
 <body>
 
-<header>Aspect Music</header>
+<header>
+    <img src="assets/logo.svg" id="logo">
+    <span>Aspect Music</span>
+</header>
 
 <section id="search-section">
     <input id="searchInput" placeholder="Search any song..." />
@@ -24,10 +32,16 @@
     <div id="aiResponse"></div>
 </section>
 
+<section id="visualizer-box">
+    <canvas id="visualizer"></canvas>
+</section>
+
 <div id="player">
     <audio id="audioPlayer" controls autoplay></audio>
 </div>
 
 <script src="script.js"></script>
+<script src="assets/visualizer.js"></script>
+
 </body>
 </html>
