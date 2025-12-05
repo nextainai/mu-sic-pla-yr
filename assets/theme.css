@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(145deg, #000000, #1b021c);
+}
+
+.song-card {
+    box-shadow: 0 0 20px #ff00b3;
+}
+#searchBtn {
+    box-shadow: 0 0 15px #ff00b3;
+}
