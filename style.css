@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    background: #181818;
+    border-bottom: 1px solid #333;
+}
+
+#search-section {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#searchInput {
+    width: 60%;
+    padding: 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+}
+
+#searchBtn {
+    padding: 14px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #ff0066;
+    color: white;
+    transition: 0.2s;
+}
+#searchBtn:hover {
+    background: #ff3380;
+}
+
+#results {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.song-card {
+    background: #1c1c1c;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.song-card:hover {
+    transform: scale(1.05);
+}
+
+.song-thumb {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#player {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #121212;
+    padding: 15px;
+    border-top: 1px solid #333;
+}
+
+#ai-section {
+    padding: 20px;
+    margin-bottom: 160px;
+}
+
+#aiInput {
+    width: 80%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+}
+
+#askAI {
+    padding: 12px 20px;
+    margin-left: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#aiResponse {
+    margin-top: 20px;
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
